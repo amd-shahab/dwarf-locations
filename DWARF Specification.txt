@@ -1812,13 +1812,13 @@ include DW_CFA_def_cfa_expression, DW_CFA_expression and DW_CFA_val_expression.
     the value is an 8-byte unsigned integer.
 
     ------------------------ ------------------------------
-	Form                     Role
+    Form                     Role
     ------------------------ ------------------------------
-	DW_FORM_line_strp        offset in .debug_line_str
-	DW_FORM_ref_addr         offset in .debug_info
-	DW_FORM_sec_offset       offset in a section other than
+    DW_FORM_line_strp        offset in .debug_line_str
+    DW_FORM_ref_addr         offset in .debug_info
+    DW_FORM_sec_offset       offset in a section other than
                              .debug_info or .debug_str
-	DW_FORM_strp             offset in .debug_str
+    DW_FORM_strp             offset in .debug_str
     DW_FORM_strp_sup         offset in .debug_str section of a
                              supplementary object file
     DW_OP_call_ref           offset in .debug_info
