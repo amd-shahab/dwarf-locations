@@ -17,6 +17,34 @@ DW_AT_abstract_origin   Inline instances of inline subprograms
 ...
 ----------------------- -------------------------------------------------------
 
+The permissible values for an attribute belong to one or more classes of
+attribute value forms. Each form class may be represented in one or more ways.
+For example, some attribute values consist of a single piece of constant data.
+“Constant data” is the class of attribute value that those attributes may have.
+There are several representations of constant data, including fixed length data
+of one, two, four, eight or 16 bytes in size, and variable length data). The
+particular representation for any given instance of an attribute is encoded
+along with the attribute name as part of the information that guides the
+interpretation of a debugging information entry.
+
+Attribute value forms belong to one of the classes shown in Table 2.3
+following.
+
+Table 2.3: Classes of attribute value
+
+----------------------- -------------------------------------------------------
+Attribute Class         General Use and Encoding
+----------------------- -------------------------------------------------------
+...
+locdesc                 A DWARF location description (see Section 2.5.3 on
+                        page 36). A leading unsigned ULEB128 value (see Section
+                        7.6 on page 233) specifies the number of bytes in the
+                        location description.
+...
+----------------------- -------------------------------------------------------
+
+...
+
 2.5 DWARF Expressions
 
 DWARF expressions describe how to compute a value or specify a location. They
